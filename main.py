@@ -65,6 +65,7 @@ if __name__ == '__main__':
     # *** PLEASE NOTE *** Algorithm can take several minutes to terminate when analyzing very large quantities of data
     print("FD")
     results = retrieve_analysis(index.russell_2000()[0:1900])
+    print(results)
     results = order_by_strength(results)  # Sort results by their overall strength
     print(".....")
 
