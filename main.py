@@ -25,10 +25,8 @@ def order_by_triangle_strength(stock_picks):
 
 
 def retrieve_analysis(ticker_list) -> [(str, float, float)]:
-    print("BRO")
     stock_picks = []
     for ticker in ticker_list:
-        print("hmm")
         if not isinstance(ticker, str):  #
             continue
 
@@ -63,11 +61,11 @@ def retrieve_analysis(ticker_list) -> [(str, float, float)]:
 if __name__ == '__main__':
     # Change inner method to change selected index, change qty of stocks analyzed by changing sublist length ...
     # *** PLEASE NOTE *** Algorithm can take several minutes to terminate when analyzing very large quantities of data
-    print("FD")
-    results = retrieve_analysis(index.russell_2000()[0:1900])
+
+    tickers = index.russell_1000()
+    results = retrieve_analysis(tickers)
     print(results)
     results = order_by_strength(results)  # Sort results by their overall strength
-    print(".....")
 
     # Open text file to write results to
     f = open("stock_info.txt", "a")
