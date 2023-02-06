@@ -64,7 +64,6 @@ if __name__ == '__main__':
 
     tickers = index.russell_1000()
     results = retrieve_analysis(tickers)
-    print(results)
     results = order_by_strength(results)  # Sort results by their overall strength
 
     # Open text file to write results to
