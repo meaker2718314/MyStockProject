@@ -25,8 +25,10 @@ def order_by_triangle_strength(stock_picks):
 
 
 def retrieve_analysis(ticker_list) -> [(str, float, float)]:
+    print("BRO")
     stock_picks = []
     for ticker in ticker_list:
+        print("hmm")
         if not isinstance(ticker, str):  #
             continue
 
@@ -61,9 +63,10 @@ def retrieve_analysis(ticker_list) -> [(str, float, float)]:
 if __name__ == '__main__':
     # Change inner method to change selected index, change qty of stocks analyzed by changing sublist length ...
     # *** PLEASE NOTE *** Algorithm can take several minutes to terminate when analyzing very large quantities of data
-    results = retrieve_analysis(index.russell_2000()[0:1700])
-
+    print("FD")
+    results = retrieve_analysis(index.russell_2000()[0:1900])
     results = order_by_strength(results)  # Sort results by their overall strength
+    print(".....")
 
     # Open text file to write results to
     f = open("stock_info.txt", "a")
@@ -74,12 +77,12 @@ if __name__ == '__main__':
     f.write("(Overall Strength, Interval Length Strength, Triangle Strength, # Resistance/Support Points)\n")
     f.write("The specific properties of these indicators can be found in the code documentation\n\n")
 
-    results = filter(lambda item: item[2][0] >= 0.50 and item[1] >= 0.20, results)  # Remove poor results from list
+    results = filter(lambda item: item[2][0] >= 0.45 and item[1] >= 0.25, results)  # Remove poor results from list
 
-    f.write(f'STOCK   GAIN    {"STRENGTH":<32}CURRENT   TARGET   TYPE \n\n')
+    f.write(f'STOCK   GAIN    {"STRENGTH":<28}CURRENT   TARGET   TYPE \n\n')
     for result in results:
         f.write(f'{result[0]:<8}{str(result[1]):<8}'
-                f'{str(result[2]):<32}${str(result[3]):<9}${str(result[4]):<8}{result[7]}\n')
+                f'{str(result[2]):<28}${str(result[3]):<9}${str(result[4]):<8}{result[7]}\n')
 
         plt.clf()  # Clear the current matplotlib plot, prevents unwanted overlay ...
 

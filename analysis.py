@@ -85,7 +85,7 @@ def historic_strength(data, critical_points, support=True) -> (float,):
     raw_strength = 1.6 * (
             average_age_bias * n_point_bias * triangle_bias)
     return (round(sigmoid_function(raw_strength, sensitivity=1, deg=2), 2), round(average_age_bias, 3),
-            round(triangle_bias, 3), len(critical_points) - 1, 3)
+            round(triangle_bias, 3), len(critical_points) - 1)
 
 
 # Return the moving average for a given data set containing decimal values
