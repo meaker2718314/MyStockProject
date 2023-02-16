@@ -40,7 +40,7 @@ def retrieve_analysis(ticker_list) -> [(str, float, float)]:
         for i, price in enumerate(price_list):  # Easier to handle and visualize with limited decimal accuracy ...
             price_list[i] = round(price, 3)
         price_action_info = \
-            analysis.support_resistance_points(price_list, buffer=2.80)
+            analysis.support_resistance_points(price_list, buffer=2.50)
 
         if len(price_action_info[0]) >= 2:
             if price_action_info[1]:
