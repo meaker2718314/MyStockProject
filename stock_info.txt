@@ -1,4 +1,4 @@
-Date: 2023-02-08
+Date: 2023-03-03
 
 *** Note that the parameters provided in the strength category are defined as the following: ***
 (Overall Strength, Interval Length Strength, Triangle Strength, # Resistance/Support Points)
@@ -6,23 +6,31 @@ The specific properties of these indicators can be found in the code documentati
 
 STOCK   GAIN    STRENGTH                    CURRENT   TARGET   TYPE 
 
-GMED    0.321   (0.87, 0.987, 0.917, 1)     $78.14    $53.08   Resistance
-FLS     0.304   (0.87, 0.962, 0.924, 1)     $34.66    $24.137  Resistance
-CTRA    0.322   (0.87, 0.975, 0.914, 1)     $23.79    $31.451  Support
-HLT     0.257   (0.86, 0.98, 0.887, 1)      $147.41   $109.501 Resistance
-EFX     0.324   (0.86, 0.963, 0.905, 1)     $221.905  $149.942 Resistance
-EA      0.253   (0.86, 0.984, 0.899, 1)     $112.43   $140.892 Support
-DT      0.274   (0.86, 0.963, 0.893, 1)     $44.055   $32.0    Resistance
-BERY    0.258   (0.86, 0.98, 0.884, 1)      $61.685   $45.789  Resistance
-ARW     0.288   (0.86, 0.968, 0.9, 1)       $128.646  $91.63   Resistance
-FND     0.345   (0.85, 0.961, 0.869, 1)     $98.77    $64.72   Resistance
-BILL    0.427   (0.85, 0.647, 0.873, 3)     $101.85   $145.357 Support
-ABNB    0.289   (0.85, 0.904, 0.933, 1)     $116.0    $82.49   Resistance
-SPOT    0.427   (0.84, 0.966, 0.841, 1)     $123.94   $71.05   Resistance
-ETSY    0.518   (0.84, 0.989, 0.82, 1)      $143.058  $69.0    Resistance
-ANET    0.262   (0.84, 0.96, 0.843, 1)      $136.0    $100.37  Resistance
-AMAT    0.364   (0.84, 0.981, 0.825, 1)     $116.74   $74.229  Resistance
-COF     0.26    (0.83, 0.839, 0.933, 1)     $118.19   $87.437  Resistance
-DASH    0.254   (0.82, 0.839, 0.924, 1)     $62.765   $46.85   Resistance
-CFLT    0.301   (0.81, 0.874, 0.851, 1)     $25.632   $17.925  Resistance
-HBI     0.503   (0.66, 0.597, 0.899, 1)     $5.795    $8.71    Support
+LFUS    0.28    (0.87, 0.974, 0.93, 1)      $272.0    $195.844 Resistance
+TRGP    0.3     (0.86, 0.983, 0.893, 1)     $79.24    $55.437  Resistance
+PSTG    0.322   (0.86, 0.986, 0.889, 1)     $24.175   $31.96   Support
+PXD     0.252   (0.86, 0.95, 0.925, 1)      $209.53   $262.365 Support
+TRGP    0.299   (0.86, 0.983, 0.893, 1)     $79.121   $55.437  Resistance
+PXD     0.254   (0.86, 0.953, 0.926, 1)     $209.29   $262.365 Support
+PCOR    0.35    (0.85, 0.971, 0.873, 1)     $66.71    $43.36   Resistance
+NFE     0.59    (0.85, 0.98, 0.853, 1)      $35.93    $57.114  Support
+HUBS    0.367   (0.85, 0.971, 0.869, 1)     $404.54   $256.09  Resistance
+ANET    0.356   (0.85, 0.989, 0.856, 1)     $140.31   $90.42   Resistance
+ANET    0.356   (0.85, 0.989, 0.856, 1)     $140.43   $90.42   Resistance
+NTRA    0.402   (0.84, 0.97, 0.838, 1)      $57.12    $34.17   Resistance
+AMAT    0.371   (0.84, 0.984, 0.818, 1)     $117.82   $74.056  Resistance
+AA      0.394   (0.84, 0.966, 0.853, 1)     $55.44    $33.575  Resistance
+AMAT    0.371   (0.84, 0.984, 0.818, 1)     $117.78   $74.056  Resistance
+WBD     0.425   (0.83, 0.975, 0.819, 1)     $15.42    $8.87    Resistance
+VLO     0.318   (0.83, 0.983, 0.813, 1)     $141.4    $96.504  Resistance
+TWKS    0.485   (0.83, 0.878, 0.89, 1)      $7.675    $11.4    Support
+WBD     0.425   (0.83, 0.975, 0.819, 1)     $15.425   $8.87    Resistance
+VLO     0.316   (0.83, 0.983, 0.813, 1)     $141.15   $96.504  Resistance
+MP      0.302   (0.82, 0.874, 0.869, 1)     $33.905   $23.67   Resistance
+DKNG    0.307   (0.82, 0.672, 0.881, 2)     $19.055   $13.2    Resistance
+TWLO    0.424   (0.81, 0.921, 0.805, 1)     $74.15    $42.74   Resistance
+TXG     0.394   (0.81, 0.659, 0.874, 2)     $50.58    $30.675  Resistance
+MPW     0.307   (0.8, 0.763, 0.94, 1)       $10.545   $13.78   Support
+AYX     0.258   (0.78, 0.579, 0.92, 2)      $67.946   $50.405  Resistance
+OLPX    0.454   (0.77, 0.734, 0.905, 1)     $4.74     $6.89    Support
+SAM     0.3     (0.76, 0.723, 0.908, 1)     $320.72   $417.0   Support

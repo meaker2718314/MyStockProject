@@ -40,7 +40,7 @@ def retrieve_analysis(ticker_list) -> [(str, float, float)]:
         for i, price in enumerate(price_list):  # Easier to handle and visualize with limited decimal accuracy ...
             price_list[i] = round(price, 3)
         price_action_info = \
-            analysis.support_resistance_points(price_list, buffer=2.50)
+            analysis.support_resistance_points(price_list, buffer=2.70)
 
         if len(price_action_info[0]) >= 2:
             if price_action_info[1]:
@@ -62,7 +62,7 @@ if __name__ == '__main__':
     # Change inner method to change selected index, change qty of stocks analyzed by changing sublist length ...
     # *** PLEASE NOTE *** Algorithm can take several minutes to terminate when analyzing very large quantities of data
 
-    tickers = index.russell_1000()
+    tickers = list(index.sp_500()) + list(index.russell_1000())
     results = retrieve_analysis(tickers)
     results = order_by_strength(results)  # Sort results by their overall strength
 

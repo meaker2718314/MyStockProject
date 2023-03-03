@@ -131,7 +131,7 @@ def aim_price(data, critical_points, support=True) -> float:
 
 
 # Decides if trend is support or resistance then returns all support/resistance points
-def support_resistance_points(data, trend_duration_floor=12, trend_duration_ceil=18, trend_strength=0.90,
+def support_resistance_points(data, trend_duration_floor=12, trend_duration_ceil=18, trend_strength=0.85,
                               buffer=2.0) -> ([(int, float)], bool):
     points = []
     current_price = data[-1]
@@ -151,7 +151,7 @@ def support_resistance_points(data, trend_duration_floor=12, trend_duration_ceil
             one specific slice of the data ...
             Range is reversed as it is optimal to look for a broader extrema point then a more local one ... """
             for t in reversed(range(trend_duration_floor, trend_duration_ceil + 1)):
-                price_increment = data[i] * trend_strength * t * 0.01
+                price_increment = data[i] * trend_strength * trend_duration_floor * 0.01
 
                 # Support
                 if data[i - t] > data[i] + price_increment and \
