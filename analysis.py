@@ -131,7 +131,7 @@ def aim_price(data, critical_points, support=True) -> float:
 
 
 # Decides if trend is support or resistance then returns all support/resistance points
-def support_resistance_points(data, trend_duration_floor=12, trend_duration_ceil=18, trend_strength=0.85,
+def support_resistance_points(data, trend_duration_floor=16, trend_duration_ceil=25, trend_strength=0.70,
                               buffer=2.0) -> ([(int, float)], bool):
     points = []
     current_price = data[-1]
